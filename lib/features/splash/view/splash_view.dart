@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:restaurant/core/app_manager/app_colors.dart';
 
 class SplashView extends StatelessWidget {
   const SplashView({super.key});
@@ -8,7 +9,7 @@ class SplashView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        backgroundColor: Color(0xffF5CB58),
+        backgroundColor:AppColors.scaffoldBackground,
       body: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
@@ -20,12 +21,12 @@ class SplashView extends StatelessWidget {
               Text("YUM",style: GoogleFonts.poppins(
                 fontWeight: FontWeight.w800,
                 fontSize: 35,
-                color: Color(0xffFF642F)
+                color: AppColors.primary,
               ),
               ), Text("QUICK",style: GoogleFonts.poppins(
                 fontWeight: FontWeight.w800,
                 fontSize: 35,
-                color: Colors.white,
+                color: AppColors.white,
               ),
               ),
 

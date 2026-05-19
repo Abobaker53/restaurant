@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:restaurant/splash_view.dart';
+import 'features/splash/view/splash_view.dart';
 
 void main() {
   runApp(const MyApp());
