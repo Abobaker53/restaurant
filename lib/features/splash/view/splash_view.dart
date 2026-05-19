@@ -3,6 +3,8 @@ import 'package:flutter_svg/flutter_svg.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:restaurant/core/app_manager/app_colors.dart';
 
+import '../../../core/components/custom_svg.dart';
+
 class SplashView extends StatelessWidget {
   const SplashView({super.key});
 
@@ -13,7 +15,7 @@ class SplashView extends StatelessWidget {
       body: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          SvgPicture.asset("assets/images/logo.svg"),
+          CustomSvg(imagePath: "assets/images/logo.svg",),
           SizedBox(height: 25,),
           Row(
             mainAxisAlignment: MainAxisAlignment.center,
