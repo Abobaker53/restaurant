@@ -4,7 +4,7 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:restaurant/core/app_manager/app_colors.dart';
 import 'package:restaurant/core/app_manager/app_images.dart';
 import 'package:restaurant/core/components/custom_svg.dart';
-import 'package:restaurant/features/onboarding/view/welcome_view.dart';
+import 'package:restaurant/features/auth/view/welcome_view.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 
 import '../../../core/helper/custom_navigator.dart';
