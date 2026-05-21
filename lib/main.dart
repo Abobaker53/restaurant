@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'features/splash/view/splash_view.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'features/onboarding/view/splash_view.dart';
 
 void main() {
   runApp(const MyApp());
@@ -8,13 +9,11 @@ void main() {
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
-
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-
-      home: const SplashView(),
+    return ScreenUtilInit(
+      designSize: const Size(393, 852),
+      builder: (_, child) => MaterialApp(home: const SplashView()),
     );
   }
 }
-
