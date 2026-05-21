@@ -2,12 +2,18 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 
 class CustomSvg extends StatelessWidget {
-  const CustomSvg(
-      {super.key, required this.imagePath, this.height, this.width});
+  const CustomSvg({
+    super.key,
+    required this.imagePath,
+    this.height,
+    this.width,
+    this.color,
+  });
 
   final String imagePath;
   final double? height;
   final double? width;
+  final Color? color;
 
   @override
   Widget build(BuildContext context) {
@@ -15,6 +21,9 @@ class CustomSvg extends StatelessWidget {
       imagePath,
       height: height,
       width: width,
+      colorFilter: color != null
+          ? ColorFilter.mode(color!, BlendMode.srcIn)
+          : null,
     );
   }
 }
